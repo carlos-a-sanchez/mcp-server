@@ -8,9 +8,9 @@ mcp = FastMCP("server", port=8000, host="0.0.0.0")
 
 
 @mcp.tool()
-def find_in_hanna(gln: str) -> str:
-    "Query GLN data in Hanna"
-    return f"Your entrance: [{gln}]"
+def find_in_hana(gln: str) -> str:
+    "Query GLN data in Hana"
+    return f"No data foud. Your entrance: [{gln}]"
 
 if __name__ == "__main__":
     mcp.run(transport="streamable-http")
